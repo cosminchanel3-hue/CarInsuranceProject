@@ -16,6 +16,8 @@ public class InsurancePolicy {
 
     private String provider;
     private LocalDate startDate;
+    @NotNull(message = "End date is required")
+    @Column(nullable = false)
     private LocalDate endDate; // nullable == open-ended
 
     public InsurancePolicy() {}
@@ -32,4 +34,5 @@ public class InsurancePolicy {
     public void setStartDate(LocalDate startDate) { this.startDate = startDate; }
     public LocalDate getEndDate() { return endDate; }
     public void setEndDate(LocalDate endDate) { this.endDate = endDate; }
+    public void setId(Long id) {this.id = id; }
 }

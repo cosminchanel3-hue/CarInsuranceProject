@@ -36,4 +36,9 @@ public class Car {
     public void setYearOfManufacture(int y) { this.yearOfManufacture = y; }
     public Owner getOwner() { return owner; }
     public void setOwner(Owner owner) { this.owner = owner; }
+
+    public void setId(long l) {
+        this.id =id;
+    }
+
 }
